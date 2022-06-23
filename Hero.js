@@ -2,20 +2,38 @@
  import React from 'react'
  
 
-function Hero() {
+ 
+
+function Hero(props) {
+
+  let badgeText
+
+  if (props.openSpots === 0) {
+    badgeText = 'SOLD OUT'
+  } else if (props.location === 'Online') {
+    badgeText = "ONLINE"
+  }
+
   return (
 
     
     
-    <section className='hero'>
-      <div className='hero--images'>
-        <img src = './pakbnb-pic1.png' alt = 'not found' className='hero--img'/>
-        <img src = './pakbnb-pic2.png' alt = 'not found' className='hero--img2'/>
-        <img src = './pakbnb-pic3.png' alt = 'not found' className='hero--img3'/>
+    <div className='hero'>
+      
+      {badgeText && <div className='hero--badge'>{badgeText}</ div>}
+      
+      
+      <div className='hero--imgContainer'>
+        <img src = {`./${props.img}`} alt = 'not found' className='hero--img'/>
       </div>
-        <h1 className='hero--header'>Premium Experiences</h1>
-        <p className='hero--text'>Select from unique {'&'} registered locations</p>
-    </section>
+
+      <div className='hero--info'>
+        <span className='hero--title'>{props.title}</span>
+        <span className = 'gray1'>Taught by: {props.instructor}</span>
+        <p className = 'price'>Rs <span className='bold-text'>{props.price} / person</span></p>
+      </div>
+        
+    </div>
     
   )
 }
