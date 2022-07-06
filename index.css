@@ -42,9 +42,10 @@ section {
 .hero {
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 30px;
   position: relative;
   z-index: -1;
+  height: max-content;
 }
 
 .hero--img {
@@ -60,7 +61,6 @@ section {
 .hero--imgContainer {
   width: 470px;
   height: 300px;
-  
   margin-right: 20px;
   
   
@@ -68,6 +68,10 @@ section {
 
 .hero--list {
   display: flex;
+  height: 520px;
+
+  
+  
   
 }
 
@@ -82,13 +86,30 @@ section {
 
 
 .hero--header {
+  
   margin-bottom: 16px;
+  margin-left: 37px;
+}
+
+.hero--text {
+  margin-left: 37px;
 }
 
 .hero--title {
   font-size: 25px;
   margin-bottom: 8px;
 }
+
+.hero--activityTitle {
+ 
+  
+ margin-top: 50px;
+ margin-left: 37px;
+}
+
+.hero--activityTitle--heading {
+  margin-bottom: 10px;
+} 
 
 .hero--badge {
   position: absolute;
@@ -109,6 +130,10 @@ section {
   font-size: 12px;
   margin-left: 50px;
   margin-right: 170px;
+  margin-top: 33px;
+}
+.card--first {
+  margin-left: -14px;
 }
 
 .card--img {
@@ -151,5 +176,5 @@ section {
 
 .cardList {
   display: flex;
-  
+ 
 }

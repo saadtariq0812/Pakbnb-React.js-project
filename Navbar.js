@@ -5,6 +5,7 @@ function Navbar() {
     <nav>
          <img src = "./pakbnb-logo.png" alt = "not" className="nav--pic"/>
         <h1 className="title-logo">pakbnb</h1>
+        
     </nav>
   )
 }

@@ -33,14 +33,20 @@ function App() {
     <div>
       
       <Navbar />
-
+      <div className="hero--activityTitle">
+        <h1 className="hero--activityTitle--heading">Premium Activities</h1>
+        <p className="hero--activityTitle--para">Learn from the experts!</p>
+      </div>
       <div className="hero--list">
+        
         {heroActivities}
       </div>
       
-       
+      <h1 className='hero--header' >Best Experiences</h1>
+      <p className='hero--text'>Select from unique {'&'} registered locations</p>
 
       <div className = 'cardList'>
+        <div className="card--first">
         <Card 
           img = 'card-img1.png'
           rating = {5.0}
@@ -48,6 +54,7 @@ function App() {
           city = 'Karachi'
           price = {70000}
         />
+        </div>
 
         <Card 
           img = 'card-img2.png'
@@ -81,30 +88,7 @@ function App() {
           price = {95000}
         />
 
-        <Card 
-          img = 'card-img2.png'
-          rating = {4.0}
-          reviewCount = {10}
-          city = 'Lahore'
-          price = {95000}
-        />
-
-<Card 
-          img = 'card-img4.png'
-          rating = {4.3}
-          reviewCount = {15}
-          city = 'Karachi'
-          price = {150000}
-        />
-
-<Card 
-          img = 'card-img4.png'
-          rating = {4.3}
-          reviewCount = {15}
-          city = 'Karachi'
-          price = {150000}
-        />
-
+       
       </div>
       
     </div>
